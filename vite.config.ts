@@ -1,6 +1,6 @@
-import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import { createVitePlugins } from './config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,7 +9,7 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
-  plugins: [vue()],
+  plugins: createVitePlugins(true),
   server: {
     host: true,
     port: 8001,
