@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.6.5
   '@commitlint/config-conventional': ^17.6.5
+  '@types/node': ^20.2.5
   '@typescript-eslint/eslint-plugin': ^5.59.9
   '@typescript-eslint/parser': ^5.59.9
   '@vitejs/plugin-vue': ^4.1.0
@@ -25,6 +26,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.6.5
   '@commitlint/config-conventional': 17.6.5
+  '@types/node': 20.2.5
   '@typescript-eslint/eslint-plugin': 5.59.9_uy4yxtc3zcl4lykl57jws34avi
   '@typescript-eslint/parser': 5.59.9_ncuargp2humkgqe4ppalcuj2jm
   '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.3.4
@@ -37,7 +39,7 @@ devDependencies:
   lint-staged: 13.2.2
   prettier: 2.8.8
   typescript: 5.0.2
-  vite: 4.3.9
+  vite: 4.3.9_@types+node@20.2.5
   vue-tsc: 1.6.5_typescript@5.0.2
 
 packages:
@@ -720,7 +722,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9
+      vite: 4.3.9_@types+node@20.2.5
       vue: 3.3.4
     dev: true
 
@@ -3145,7 +3147,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite/4.3.9:
+  /vite/4.3.9_@types+node@20.2.5:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -3170,6 +3172,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.2.5
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.24.0
