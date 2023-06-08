@@ -1,2 +1,3 @@
+import { createViteBuild } from './build'
 import { createVitePlugins } from './plugins'
-export { createVitePlugins }
+export { createVitePlugins, createViteBuild }
