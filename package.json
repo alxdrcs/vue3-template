@@ -1,14 +1,16 @@
 {
   "name": "vite-vue3-ts-pinia",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
+    "bootstrap": "pnpm install",
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "npm run build && vite preview",
     "lint": "eslint src --fix --ext .ts,.tsx,.vue,.js,.jsx",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "vue": "^3.2.47"
